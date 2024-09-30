@@ -16,5 +16,5 @@ mult_loop:
 mult_eol:
         LDUR X19, [SP, 0]
         ADD X0, X9, XZR         // Move X9 to X0 to return
+	ADD SP, SP, 16 //restores stack pointer
         BR X30
-
